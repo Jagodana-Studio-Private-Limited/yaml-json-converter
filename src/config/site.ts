@@ -1,27 +1,30 @@
 export const siteConfig = {
   // ====== CUSTOMIZE THESE FOR EACH TOOL ======
-  name: "{{TOOL_NAME}}",
-  title: "{{TOOL_TITLE}}",
-  description: "{{TOOL_DESCRIPTION}}",
-  url: "https://{{TOOL_SLUG}}.jagodana.com",
+  name: "YAML JSON Converter",
+  title: "YAML ↔ JSON Converter — Convert YAML to JSON & JSON to YAML Instantly",
+  description:
+    "Free online YAML to JSON and JSON to YAML converter. Paste your data, get instant results. Supports nested objects, arrays, and multi-document YAML. 100% client-side.",
+  url: "https://yaml-json-converter.tools.jagodana.com",
   ogImage: "/opengraph-image",
 
   // Header
-  headerIcon: "Wrench", // lucide-react icon name (e.g., Image, Map, Code, Palette, Globe, FileSearch)
+  headerIcon: "FileJson", // lucide-react icon name
   // Brand gradient colors for Tailwind are in globals.css (--brand / --brand-accent)
-  // Use text-brand, from-brand, to-brand-accent etc. in components
-  brandAccentColor: "#06b6d4", // hex accent for OG image gradient (must match --brand-accent in globals.css)
+  brandAccentColor: "#6366f1", // hex accent for OG image gradient (must match --brand-accent in globals.css)
 
   // SEO
   keywords: [
-    "{{KEYWORD_1}}",
-    "{{KEYWORD_2}}",
-    "{{KEYWORD_3}}",
+    "yaml to json",
+    "json to yaml",
+    "yaml converter",
+    "json converter",
+    "yaml parser",
+    "data format converter",
   ],
-  applicationCategory: "DeveloperApplication", // or "DesignApplication", "UtilitiesApplication"
+  applicationCategory: "DeveloperApplication",
 
   // Theme
-  themeColor: "#10b981", // used in manifest and meta tags
+  themeColor: "#3b82f6", // used in manifest and meta tags
 
   // Branding
   creator: "Jagodana",
@@ -31,51 +34,55 @@ export const siteConfig = {
   // Social Profiles (for Organization schema sameAs)
   socialProfiles: [
     "https://twitter.com/jagodana",
-    // Add more: LinkedIn, YouTube, etc.
   ],
 
   // Links
   links: {
-    github: "https://github.com/Jagodana-Studio-Private-Limited/{{TOOL_SLUG}}",
+    github: "https://github.com/Jagodana-Studio-Private-Limited/yaml-json-converter",
     website: "https://jagodana.com",
   },
 
   // Footer
   footer: {
-    about: "{{FOOTER_ABOUT_DESCRIPTION}}",
+    about:
+      "A free developer tool for converting between YAML and JSON formats. Built for speed, privacy, and ease of use.",
     featuresTitle: "Features",
     features: [
-      "{{FEATURE_1}}",
-      "{{FEATURE_2}}",
-      "{{FEATURE_3}}",
-      "{{FEATURE_4}}",
+      "YAML to JSON conversion",
+      "JSON to YAML conversion",
+      "Multi-document YAML support",
+      "Syntax error detection",
     ],
   },
 
   // Hero Section
   hero: {
-    badge: "{{HERO_BADGE_TEXT}}",
-    titleLine1: "{{HERO_TITLE_LINE_1}}",
-    titleGradient: "{{HERO_TITLE_GRADIENT_TEXT}}",
-    subtitle: "{{HERO_SUBTITLE}}",
+    badge: "Free Online Converter",
+    titleLine1: "Convert Between",
+    titleGradient: "YAML & JSON Instantly",
+    subtitle:
+      "Paste YAML to get JSON, or JSON to get YAML. Supports nested objects, arrays, comments, and multi-document YAML. 100% client-side — your data never leaves the browser.",
   },
 
   // Feature Cards (shown on homepage)
   featureCards: [
     {
-      icon: "{{FEATURE_ICON_1}}",
-      title: "{{FEATURE_CARD_TITLE_1}}",
-      description: "{{FEATURE_CARD_DESC_1}}",
+      icon: "⚡",
+      title: "Lightning Fast",
+      description:
+        "Real-time conversion as you type. No waiting, no button clicks — instant results every time.",
     },
     {
-      icon: "{{FEATURE_ICON_2}}",
-      title: "{{FEATURE_CARD_TITLE_2}}",
-      description: "{{FEATURE_CARD_DESC_2}}",
+      icon: "🛡️",
+      title: "Privacy First",
+      description:
+        "100% client-side processing. Your data never leaves your browser — no uploads, no server calls.",
     },
     {
-      icon: "{{FEATURE_ICON_3}}",
-      title: "{{FEATURE_CARD_TITLE_3}}",
-      description: "{{FEATURE_CARD_DESC_3}}",
+      icon: "🗂️",
+      title: "Full Support",
+      description:
+        "Handles nested objects, arrays, multi-document YAML, comments, and complex data structures.",
     },
   ],
 
@@ -121,54 +128,58 @@ export const siteConfig = {
 
   // HowTo Steps (drives HowTo JSON-LD schema for rich results)
   howToSteps: [
-    { name: "{{STEP_1_NAME}}", text: "{{STEP_1_TEXT}}", url: "" },
-    { name: "{{STEP_2_NAME}}", text: "{{STEP_2_TEXT}}", url: "" },
-    { name: "{{STEP_3_NAME}}", text: "{{STEP_3_TEXT}}", url: "" },
+    {
+      name: "Paste your data",
+      text: "Paste your YAML or JSON into the input panel on the left. The tool automatically detects the format.",
+      url: "",
+    },
+    {
+      name: "Get instant conversion",
+      text: "The converted output appears in real-time on the right panel. YAML becomes JSON, and JSON becomes YAML automatically.",
+      url: "",
+    },
+    {
+      name: "Copy the result",
+      text: "Click the Copy button to copy the converted output to your clipboard, ready to use anywhere.",
+      url: "",
+    },
   ],
-  howToTotalTime: "PT2M", // ISO 8601 duration (e.g., PT2M = 2 minutes)
+  howToTotalTime: "PT1M", // ISO 8601 duration (1 minute)
 
   // FAQ (drives both the FAQ UI section and FAQPage JSON-LD schema)
   faq: [
     {
-      question: "{{FAQ_QUESTION_1}}",
-      answer: "{{FAQ_ANSWER_1}}",
+      question: "How do I convert YAML to JSON?",
+      answer:
+        "Simply paste your YAML into the left input panel. The tool automatically detects that it's YAML and instantly shows the equivalent JSON in the right panel. No buttons to click — conversion happens in real-time as you type.",
     },
     {
-      question: "{{FAQ_QUESTION_2}}",
-      answer: "{{FAQ_ANSWER_2}}",
+      question: "How do I convert JSON to YAML?",
+      answer:
+        "Paste your JSON into the left input panel. The tool detects JSON format automatically and converts it to clean, readable YAML in the right panel. You can also toggle pretty-print to control JSON output formatting.",
     },
     {
-      question: "{{FAQ_QUESTION_3}}",
-      answer: "{{FAQ_ANSWER_3}}",
+      question: "Does this tool support multi-document YAML?",
+      answer:
+        "Yes! The converter supports multi-document YAML files that use the --- separator. Each document is parsed and converted correctly. Complex nested objects, arrays, anchors, and aliases are all supported.",
     },
     {
-      question: "{{FAQ_QUESTION_4}}",
-      answer: "{{FAQ_ANSWER_4}}",
+      question: "Is my data safe? Does it get sent to a server?",
+      answer:
+        "Your data never leaves your browser. This tool is 100% client-side — all conversion happens locally using JavaScript. No data is uploaded, stored, or transmitted to any server.",
     },
   ],
 
   // ====== PAGES (for sitemap + per-page SEO) ======
-  // Add every route here. Sitemap and generatePageMetadata() read from this.
   pages: {
     "/": {
-      title: "{{TOOL_TITLE}}",
-      description: "{{TOOL_DESCRIPTION}}",
+      title:
+        "YAML ↔ JSON Converter — Convert YAML to JSON & JSON to YAML Instantly",
+      description:
+        "Free online YAML to JSON and JSON to YAML converter. Paste your data, get instant results. Supports nested objects, arrays, and multi-document YAML. 100% client-side.",
       changeFrequency: "weekly" as const,
       priority: 1,
     },
-    // Example page (DELETE when starting your tool, or customize)
-    "/about": {
-      title: "About - {{TOOL_NAME}}",
-      description: "Learn more about {{TOOL_NAME}} and how it works.",
-      changeFrequency: "monthly" as const,
-      priority: 0.7,
-    },
-    // "/blog": {
-    //   title: "Blog - {{TOOL_NAME}}",
-    //   description: "Tips, tutorials, and updates about {{TOOL_NAME}}.",
-    //   changeFrequency: "weekly" as const,
-    //   priority: 0.8,
-    // },
   },
 } as const;
 
